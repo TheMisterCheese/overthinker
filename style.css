@@ -1,12 +1,47 @@
-@font-face{
-    font-family: instrumentSerifIII;
-    src: url('C:\Users\User\OneDrive\Documents\overthinkr\InstrumentSerif-Italic.ttf')
+@font-face {
+    font-family: Arimo;
+    src: url('Arimo-VariableFont_wght.ttf');
 }
 
 
+@font-face{
+    font-family: instrumentSerifIII;
+    src: url('InstrumentSerif-Italic.ttf');
+    
+
+    
+}
+h1{
+    font-family: instrumentSerifIII;
+    font-size: 210px;
+    transition: .35s ease;
+    background: linear-gradient(
+        to right,
+        rgb(250, 78, 10),
+        rgb(240, 12, 204),
+        rgb(0, 106, 255),
+        rgb(217, 48, 255),
+        rgb(250, 78, 10)
+
+    );
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientAnimation 2s linear infinite;
+    
+}
+@keyframes gradientAnimation{
+    0%{
+        background-position: 200% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
 #title{
     text-align: center;
-    font-family: instrumentSerifIII;
+    
 }
 body{
     background: white;
@@ -26,9 +61,10 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     justify-content: flex-end;
-    
+    font-family: Arimo;
+    font-weight: bolder;
 }
 nav a{
     position: sticky;
