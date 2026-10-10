@@ -1,17 +1,19 @@
 @font-face {
     font-family: Arimo;
-    src: url('Arimo-VariableFont_wght.ttf');
+    src: url('fonts/Arimo-VariableFont_wght.ttf');
 }
 
 
 @font-face{
     font-family: instrumentSerifIII;
-    src: url('InstrumentSerif-Italic.ttf');
+    src: url('fonts/InstrumentSerif-Italic.ttf');
     
 
     
 }
 h1{
+    
+    user-select: none;
     font-family: instrumentSerifIII;
     font-size: 210px;
     transition: .35s ease;
@@ -43,8 +45,20 @@ h1{
     text-align: center;
     
 }
+#dynamicpara{
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI';
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 25px #00000069;
+
+}
 body{
     background: white;
+     background-image: url('Document.png');
+    background-size: cover;
+    background-position: 100%;
 }
 nav{
     display: flex;
