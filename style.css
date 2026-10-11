@@ -52,11 +52,28 @@ h1{
     font-size: 40px;
     font-weight: bolder;
     text-shadow: 2px 2px 25px #00000069;
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        
+        transform: rotate(-5deg);
 
+    }
+    50%{
+
+        transform: rotate(5deg);
+
+    }
+    100%{
+
+        transform: rotate(-5deg);
+
+    }
 }
 body{
     background: white;
-     background-image: url('Document.png');
+     background-image: url('Document.webp');
     background-size: cover;
     background-position: 100%;
 }
@@ -66,7 +83,7 @@ nav{
     background-color: whitesmoke;
     text-decoration: none;
     border-radius: 50px;
-    padding: 18px 30px;
+    padding: 0 30px;
     box-shadow: 0 3px 35px;
     justify-content: flex-end;
 
@@ -79,6 +96,10 @@ nav ul{
     justify-content: flex-end;
     font-family: Arimo;
     font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
 }
 nav a{
     position: sticky;
@@ -93,4 +114,17 @@ nav a{
     transition: .35s ease;
     overflow: hidden;
 
+}
+nav ul.navbar li:has(.home-btn){
+    margin-right: auto;
+}
+nav a.home-btn{
+    background-color: transparent;
+    color: black;
+    font-family: instrumentSerifIII;
+    font-size: 50px;
+}
+.arrow{
+    background-image: url(arrow.svg);
+    size: 500px;
 }
